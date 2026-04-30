@@ -9,8 +9,10 @@ export default function HomePage() {
     <>
       <HeroSection />
       <Container className="my-5">
-        <h2 className="mb-3">Coming Soon</h2>
-        <CountdownTimer />
+        <h2 className="mb-3 text-center">Coming Soon</h2>
+        <div className="text-center">
+          <CountdownTimer />
+        </div>
 
         <h2 className="mt-5 mb-3">Platform Features</h2>
         <Row className="g-4">
