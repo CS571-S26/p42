@@ -20,7 +20,7 @@ export default function CountdownTimer() {
 
   return (
     <div>
-      <h3>Launch Countdown: {new Date(launch).toLocaleString()}</h3>
+      <p className="fw-semibold mb-1">Launch Countdown: {new Date(launch).toLocaleDateString()}</p>
       <p>{days}d {hours}h {minutes}m {seconds}s</p>
     </div>
   );
