@@ -18,10 +18,25 @@ export default function CountdownTimer() {
   const minutes = Math.floor((time / 60000) % 60);
   const seconds = Math.floor((time / 1000) % 60);
 
+  const units = [
+    { label: 'Days', value: days },
+    { label: 'Hours', value: hours },
+    { label: 'Minutes', value: minutes },
+    { label: 'Seconds', value: seconds },
+  ];
+
   return (
-    <div>
-      <p className="fw-semibold mb-1">Launch Countdown: {new Date(launch).toLocaleDateString()}</p>
-      <p>{days}d {hours}h {minutes}m {seconds}s</p>
+    <div className="d-flex justify-content-center gap-5 my-4">
+      {units.map(({ label, value }) => (
+        <div key={label} className="text-center">
+          <div style={{ fontSize: '6rem', fontWeight: 700, lineHeight: 1 }}>
+            {String(value).padStart(2, '0')}
+          </div>
+          <div className="text-muted" style={{ fontSize: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+            {label}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

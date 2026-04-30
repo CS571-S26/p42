@@ -29,7 +29,7 @@ export default function AboutPage() {
         <Col md={6}>
           <img
             src="/p42/landing.png"
-            alt="Screenshot of the Sub2Lease landing page showing the hero section with a campus background"
+            alt="Screenshot of the Sub2Lease landing page"
             className="img-fluid rounded border"
           />
         </Col>
@@ -45,7 +45,7 @@ export default function AboutPage() {
         <Col md={6} className="order-md-1">
           <img
             src="/p42/listings.png"
-            alt="Screenshot of the Sub2Lease listings page showing sublease cards alongside a Google Map"
+            alt="Screenshot of the Sub2Lease listings page"
             className="img-fluid rounded border"
           />
         </Col>
