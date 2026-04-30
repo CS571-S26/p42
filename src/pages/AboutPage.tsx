@@ -13,7 +13,7 @@ export default function AboutPage() {
       <h2 className="mt-4">Our Mission</h2>
       <p>
         Our goal is to simplify the process of finding, posting, and managing short-term student
-        subleases — connecting students who need housing with students who need to fill a lease.
+        subleases, connecting students who need housing with students who need to fill a lease.
       </p>
 
       <h2 className="mt-4">What You Can Do</h2>
@@ -48,16 +48,6 @@ export default function AboutPage() {
             alt="Screenshot of the Sub2Lease listings page"
             className="img-fluid rounded border"
           />
-        </Col>
-      </Row>
-
-      <Row className="g-4 mb-4 align-items-center">
-        <Col md={6}>
-          <h3 className="h5">Waitlist</h3>
-          <p className="text-muted">
-            Sign up early to get notified when Sub2Lease launches and receive updates on new
-            features and availability in your area.
-          </p>
         </Col>
       </Row>
 
